@@ -1,0 +1,26 @@
+from collections import Counter
+
+a = ['apple', 'orange', 'computer', 'orange']
+b = ['computer', 'orange']
+
+ca = Counter(a)
+cb = Counter(b)
+
+print(ca)
+print(cb)
+ca + cb  # Counter({'orange': 3, 'computer': 2, 'apple': 1})
+
+
+def sumc(*c):
+    if (len(c) < 1):
+        return
+    mapc = map(Counter, c)  # map 化操作
+    s = Counter([])
+    for ic in mapc:
+        s += ic
+    return s
+
+#Counter({'orange': 3, 'computer': 3, 'apple': 1, 'abc': 1, 'face': 1})
+
+
+print(sumc(a, b, ['abc'], ['face', 'computer']))
