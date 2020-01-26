@@ -1,6 +1,6 @@
 import seaborn as sns
 import pandas as pd
-import numpy np
+import numpy as np
 import matplotlib.pyplot as plt
 
 # 生成数据集
