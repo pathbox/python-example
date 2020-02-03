@@ -67,6 +67,7 @@ def get_longest_non_repeat_v1(string):
         if i - j + 1 > max_length:
             max_length = i - j + 1
             sub_string = string[j: i + 1]
+    print(dict, sub_string)
     return max_length, sub_string
 
 
@@ -93,7 +94,7 @@ def get_longest_non_repeat_v2(string):
     return max_len, sub_string
 
 
-s = "abcabcbb"
+s = "abcabcdefgbb"
 
 print(get_longest_non_repeat_v1(s))
 print(get_longest_non_repeat_v2(s))
