@@ -28,9 +28,9 @@ def three_sum(array):
         l, r = i+1, len(array) - 1
         while l < r:
             s = array[i]+array[l]+array[r]
-            if s > 0:
+            if s > 0:  # 说明r应该往小的方向移动，才有可能三数之和得到0
                 r -= 1
-            elif s < 0:
+            elif s < 0:  # 说明l应该往大的方向移动，才有可能三数之和得到0
                 l += 1
             else:
                 res.add((array[i], array[l], array[r]))
