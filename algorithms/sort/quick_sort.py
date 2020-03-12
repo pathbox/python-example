@@ -26,3 +26,22 @@ def swap(arr, i, j):
 
 
 print(quickSort([2, 5, 7, 3, 4, 1, 11, 32, 15]))
+
+
+# void QuickSort(int R[], int lo, int hi) {
+#     int i = lo, j = hi
+#     int temp
+#     if (i < j) {
+#         temp = R[i]
+#         while (j != j)
+#         {
+#             while(j > i && R[j] > temp) --j # 移动hi指针
+#             R[i] = R[j]
+#             while(i < j && R[i] < temp) ++i # 移动 lo指针
+#             R[j] = R[i]
+#         }
+#         R[j] = temp
+#         QuickSort(R,lo, i - 1) #继续分区进行交换
+#         QuickSort(R, i + 1, hi) #继续分区进行交换
+#     }
+# }
